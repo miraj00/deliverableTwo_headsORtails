@@ -1,4 +1,3 @@
-import java.util.InputMismatchException;
 import java.util.Random;
 import java.util.Scanner;
 
@@ -76,6 +75,7 @@ public class headsORtails {
 		System.out.println("\nYour guess, "+ headsOrTailsGuess+", came up "+ correctCount +
 				" time" + (correctCount != 1 ? "s." : "."));
 		
+	//  convert correctCount to percent correct ---------------------------------------	
 		percentCorrect = (double)correctCount/numberOfFlips*100.0;
 	//	System.out.println("That's "+ percentCorrect +"%. ");
     //  round up figure using math.round ()		
