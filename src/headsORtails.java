@@ -1,39 +1,3 @@
-//import java.util.Scanner;
-//import java.util.Random;
-//
-//public class headsORtails {
-//
-//	public static void main(String[] args) {
-//		
-//		Scanner sc = new Scanner(System.in);
-//      	
-//		System.out.print("Guess which will have more: heads or tails? ");
-//	    String headsOrTailsGuess = sc.nextLine();
-//	    System.out.println(headsOrTailsGuess);
-//	    if (headsOrTailsGuess != "heads" || headsOrTailsGuess != "tails") {
-//	    	System.out.println("******Please enter heads or tails spelled correctly********");
-//	    	main(args); 			
-//	    }
-//	    
-//	    System.out.print(" How many times shall we flip a coin? : ");
-//	    int numberOfFlips = sc.nextInt();
-//	
-//	    
-//	    Random random = new Random();
-//        int coin_flip = random.nextInt(numberOfFlips);
-//        
-//        System.out.println(coin_flip);
-//	    
-//	    
-//		
-//	}
-//
-//}
-//
-
-
-
-
 import java.util.InputMismatchException;
 import java.util.Random;
 import java.util.Scanner;
@@ -51,9 +15,12 @@ public class headsORtails {
 		String guessRight;
 		int randomCoin;
 		int userCoin = -1;
+		
 		final int HEADS = 0;
 		final int TAILS = 1;
+		
 		double percentCorrect = 0.0;
+		
 		Random rand = new Random();
 		
      // depends on response set userCoin value to 0 or 1 ---------------------
